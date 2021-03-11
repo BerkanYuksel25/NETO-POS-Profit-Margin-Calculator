@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes status-box-fade {
+        0% {
+          opacity: 0%;
+          transform: translateY(-10%);
+        }
+        100% {
+          opacity: 100%;
+          transform: translateY(0%);
+        }
+      }
+      body {
+        color: #333;
+        font-size: 14px;
+        font-family: roboto, sans-serif;
+        overflow: hidden;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0 16px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        font-size: 115%;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+      div {
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+      .status-box {
+        margin-top: 12px;
+        padding: 6px 16px;
+        text-align: center;
+        animation: status-box-fade 500ms ease-in-out;
+      }
+      .status {
+        vertical-align: middle;
+        font-weight: 500;
+      }
+      .status-icon {
+        margin-right: 12px;
+      }
+      #success-icon {
+        color: #319b18;
+      }
+      #error-icon {
+        color: #da123c;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <label for="api-url">NETO API URL</label>
+      <input type="text" name="api-url" id="api-url" />
+      <label for="api-user">NETO API User</label>
+      <input type="text" name="api-user" id="api-user" />
+      <label for="api-key">NETO API Key</label>
+      <input type="password" name="api-key" id="api-key" />
+      <input id="save" type="submit" value="Save" />
+    </div>
+    <script src="../scripts/options.js"></script>
+  </body>
+</html>

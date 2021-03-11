@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        color: #333;
+        font-size: 14px;
+        font-family: roboto, sans-serif;
+        overflow: hidden;
+      }
+      .main-container {
+        text-align: center;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+      }
+      .animated {
+        animation: fade-effect 500ms ease-in-out;
+      }
+      .calculations > div {
+        padding: 10px;
+      }
+      .margin {
+        background-color: #fff;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+      }
+      .margin > span {
+        margin: 0 50px;
+        font-size: 250%;
+      }
+      .details {
+        background-color: #fff;
+        border-top: 1px solid #eee;
+        padding: 5px;
+      }
+      .details > span {
+        font-weight: 300;
+        font-size: 85%;
+        color: #000;
+        vertical-align: sub;
+      }
+      .accuracy > span {
+        font-size: 100%;
+        font-weight: 500;
+        vertical-align: middle;
+      }
+      .status-icon {
+        margin-right: 7px;
+      }
+      .status-accurate {
+        color: #319b18;
+      }
+      .status-inaccurate {
+        color: #da123c;
+      }
+      .spinner {
+        margin: 0 75px;
+        width: 70px;
+        text-align: center;
+      }
+      .spinner > div {
+        width: 18px;
+        height: 18px;
+        background-color: #333;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      }
+      .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+      .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+      @-webkit-keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+        }
+      }
+      @keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes fade-effect {
+        0% {
+          opacity: 0%;
+          transform: translateY(-10%);
+        }
+        100% {
+          opacity: 100%;
+          transform: translateY(0%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="calculations">
+        <div class="spinner animated">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+      <div class="details"><span>Developed by Berkan Yuksel</span></div>
+    </div>
+    <script src="../scripts/popup.js"></script>
+  </body>
+</html>
