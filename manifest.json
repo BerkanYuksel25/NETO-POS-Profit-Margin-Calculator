@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "NETO POS Profit Margin Calculator",
   "description": "This extension will calculate real-time gross profit margins of multiple products in a NETO POS sales order.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Berkan Yuksel",
   "permissions": ["storage"],
   "icons": {
