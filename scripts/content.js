@@ -111,8 +111,3 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     sendResponse(getPosInfo());
   }
 });
-
-const expandOrderLines = document.createElement("script");
-expandOrderLines.appendChild(document.createTextNode("expandOL(-1)"));
-
-document.body.appendChild(expandOrderLines);
